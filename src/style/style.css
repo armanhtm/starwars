@@ -1,0 +1,179 @@
+/***
+this block make the whole page and set the background 
+***/
+body {
+    background: url("../images/starship_background.jpg") no-repeat center / cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Tahoma';
+    overflow: hidden;
+}
+
+/***
+    this block make the container in the middle of the page and adjust it
+***/
+.container {
+    max-width: 2000px;
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 50px rgb(85, 0, 255); 
+    border-radius: 10px;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+/***
+    this block adjust each list title and make the font to title size
+***/
+.title {
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+}
+/***
+    this block adjust div of each list for movies and starships link
+***/
+.List {
+    color: white;
+    list-style: none;
+    padding-left: 15px;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+}
+/**
+    this block make list element more visible and set spacing between
+**/
+.items {
+    padding-left: 15px;
+    margin-top: 5px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+/***
+    this block make list style to none
+***/
+.bullet {
+    list-style: none;
+}
+/***
+    this block used in javascript and make each item to required formant when we want to add it
+***/
+.item {
+    margin: 5px;
+    color: white;
+}
+/***
+    this block make underline link visible and better
+***/
+.link {
+    color: white;
+    padding: 10px;
+}
+/***
+    this block is used for adjust elements in ul list and set them in the right place
+***/
+ul, li {
+    /* list-style: none; Remove default bullets */
+    margin: 5px;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  }
+/***
+    this block make a red bullet behind each element in ul list
+***/
+ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: red; /* Change the color */
+    font-weight: bold; 
+    width: 1em; 
+    margin: 3px;
+  }
+/***
+    this block set pagination in right place (next , current , previous)
+***/
+.pagination {
+    display: flex;
+    align-items: center;
+}
+/***
+    this block is used when we want to show our page on smaller screens like cell phones and adjust everything
+***/
+@media only screen and (max-width: 767.8px) {
+    .container {
+        width: 100%;
+        height: 100vh;
+        grid-template-columns: 1fr;
+    }
+
+    .pagination {
+        justify-content: center;
+    }
+} 
+/***
+    this block is main adjustments for buttons and shape the buttons
+***/
+.button {
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+/***
+    this block is used to make button1 better and more visible
+***/
+  .button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+  }
+/***
+    this block make hover for button1
+***/
+  .button1:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
+/***
+    this block is used to make button2 better and more visible
+***/
+  .button2 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+  }
+/***
+    this block make hover for button2
+***/ 
+  .button2:hover {
+    background-color: #008CBA;
+    color: white;
+  }
+/***
+    this block is used to make button3 better and more visible
+***/
+  .button3 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #ff0000;
+  }
+/***
+    this block make hover for button3
+***/  
+  .button3:hover {
+    background-color: #fb00ff;
+    color: white;
+  }

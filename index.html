@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- head part (set meta and links to css file) -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star wars</title>
+    <link rel="stylesheet" href="src/style/style.css">
+
+</head>
+<!-- body part (create sections and tags and lists for movies and starships) -->
+<body>
+    <!-- container part which is placed in the middle of the page -->
+    <section class="container">
+        <!-- back to movies button -->
+        <button class="button button3" id="get_back">Get back to movies</button></br></br>
+        <!-- first list (show movies then shows starships) -->
+        <div class="list", id="everything">
+            <h2 class="title" id="get_back_to_movies" >Movies</h2>
+            <ul class="bullet items" id="movies_starships">
+            </ul>
+        </div>
+        <!-- second list (shows starships links then shows starship details) -->
+        <div class="list">
+            <h2 class="title" id="starship_header">Starships</h2>
+            <ul class="bullet items" id="links_details">
+            </ul>
+        </div>
+        <!-- page part which make next current previous buttons -->
+        <footer class="pagination">
+            <button class="button button2" id="previous_page_button">< Prev page</button>
+            <p class="button" id="currentPage">Current Page: 1</p>
+            <button class="button button1" id="next_page_button">Next page ></button>
+        </footer>
+    </section>
+    <!-- include java script code -->
+    <script src="src/js/web.js"></script>
+</body>
+</html>
